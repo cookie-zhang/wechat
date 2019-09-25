@@ -1,13 +1,81 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<!-- <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button bindtap="changeAutoplay"> autoplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/>
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> -->
+<!-- <view class="section">
+  <view class="section__title">flex-direction: row</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
   </view>
 </view>
+<view class="section">
+  <view class="section__title">flex-direction: column</view>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view> -->
+<!-- <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button> -->
+<!-- camera.wxml -->
+<!-- <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+<button type="primary" bindtap="takePhoto">拍照</button>
+<view>预览</view>
+<image mode="widthFix" src="{{src}}"></image> -->
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">switch</view>
+    <switch name="switch"/>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">slider</view>
+    <slider name="slider" show-value ></slider>
+  </view>
+
+  <view class="section">
+    <view class="section__title">input</view>
+    <input name="input" placeholder="please input here" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">radio</view>
+    <radio-group name="radio-group">
+      <label><radio value="radio1"/>radio1</label>
+      <label><radio value="radio2"/>radio2</label>
+    </radio-group>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">checkbox</view>
+    <checkbox-group name="checkbox">
+      <label><checkbox value="checkbox1"/>checkbox1</label>
+      <label><checkbox value="checkbox2"/>checkbox2</label>
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button form-type="submit">Submit</button>
+    <button form-type="reset">Reset</button>
+  </view>
+</form> -->
+<!-- <rich-text nodes="{{nodes}}"
+ bindtap="tap"
+ bindtouchstart="start"
+ bindtouchmove="move"
+ bindtouchend="end"
+ bindtouchcancel="cacel"
+></rich-text> -->
+  <!-- <canvas type="webgl" id="myCanvas"></canvas> -->
+  <map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
